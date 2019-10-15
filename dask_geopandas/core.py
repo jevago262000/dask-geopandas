@@ -5,7 +5,8 @@ import geopandas as gpd
 import pandas as pd
 from dask.utils import M, funcname
 from dask.base import tokenize, normalize_token
-from dask.optimize import key_split
+#from dask.optimize import key_split
+from dask.optimization import key_split # dask changed the name of the module
 from dask.compatibility import apply
 import dask.dataframe as dd
 import dask.threaded
